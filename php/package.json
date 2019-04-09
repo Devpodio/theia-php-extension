@@ -1,9 +1,9 @@
 {
-  "name": "@theia/php",
+  "name": "@devpodio/php",
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.0.0",
+  "version": "0.5.0",
   "files": [
     "/data",
     "/lib",
@@ -12,8 +12,8 @@
     "/composer.lock"
   ],
   "dependencies": {
-    "@theia/core": "next",
-    "@theia/monaco": "next"
+    "@devpodio/core": "latest",
+    "@devpodio/monaco": "latest"
   },
   "devDependencies": {
     "lerna": "2.4.0",

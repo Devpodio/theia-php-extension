@@ -6,26 +6,26 @@
  */
 
 import { injectable, inject } from "inversify";
-import { BaseLanguageClientContribution, Workspace, Languages, LanguageClientFactory } from '@theia/languages/lib/browser';
+import { BaseLanguageClientContribution, Workspace, Languages, LanguageClientFactory } from '@devpodio/languages/lib/browser';
 import { PHP_LANGUAGE_ID, PHP_LANGUAGE_NAME } from '../common';
 
 @injectable()
 export class PHPClientContribution extends BaseLanguageClientContribution {
 
-    readonly id = PHP_LANGUAGE_ID;
-    readonly name = PHP_LANGUAGE_NAME;
+  readonly id = PHP_LANGUAGE_ID;
+  readonly name = PHP_LANGUAGE_NAME;
 
-    constructor(
-        @inject(Workspace) protected readonly workspace: Workspace,
-        @inject(Languages) protected readonly languages: Languages,
-        @inject(LanguageClientFactory) protected readonly languageClientFactory: LanguageClientFactory
-    ) {
-        super(workspace, languages, languageClientFactory);
-    }
+  constructor(
+    @inject(Workspace) protected readonly workspace: Workspace,
+    @inject(Languages) protected readonly languages: Languages,
+    @inject(LanguageClientFactory) protected readonly languageClientFactory: LanguageClientFactory
+  ) {
+    super(workspace, languages, languageClientFactory);
+  }
 
-    protected get globPatterns() {
-        return [
-            '**/*.php'
-        ];
-    }
+  protected get globPatterns() {
+    return [
+      '**/*.php'
+    ];
+  }
 }

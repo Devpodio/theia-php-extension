@@ -1,27 +1,27 @@
 {
   "private": true,
   "name": "browser-app",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "dependencies": {
-    "@theia/core": "next",
-    "@theia/filesystem": "next",
-    "@theia/workspace": "next",
-    "@theia/preferences": "next",
-    "@theia/navigator": "next",
-    "@theia/process": "next",
-    "@theia/terminal": "next",
-    "@theia/editor": "next",
-    "@theia/languages": "next",
-    "@theia/markers": "next",
-    "@theia/monaco": "next",
-    "@theia/typescript": "next",
-    "@theia/php": "0.0.0"
+    "@devpodio/core": "latest",
+    "@devpodio/editor": "latest",
+    "@devpodio/filesystem": "latest",
+    "@devpodio/languages": "latest",
+    "@devpodio/markers": "latest",
+    "@devpodio/monaco": "latest",
+    "@devpodio/navigator": "latest",
+    "@devpodio/php": "0.5.0",
+    "@devpodio/preferences": "latest",
+    "@devpodio/process": "latest",
+    "@devpodio/terminal": "latest",
+    "@devpodio/typescript": "latest",
+    "@devpodio/workspace": "latest"
   },
   "devDependencies": {
-    "@theia/cli": "next"
+    "@devpodio/cli": "latest"
   },
   "scripts": {
-    "prepare": "theia build",    
+    "prepare": "theia build",
     "start": "theia start",
     "watch": "theia build --watch"
   },
