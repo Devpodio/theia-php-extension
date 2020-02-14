@@ -3,29 +3,38 @@
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.5.0",
+  "version": "0.6.1",
   "files": [
     "/data",
     "/lib",
     "/src",
     "/composer.json",
-    "/composer.lock"
+    "/composer.lock",
+    "/vendor/autoload.php",
+    "/vendor/composer",
+    "/vendor/felixfbecker",
+    "/vendor/microsoft",
+    "/vendor/netresearch",
+    "/vendor/phpdocumentor",
+    "/vendor/psr",
+    "/vendor/sabre",
+    "/vendor/symfony",
+    "/vendor/webmozart"
   ],
   "dependencies": {
-    "@devpodio/core": "latest",
-    "@devpodio/monaco": "latest"
+    "@devpodio/core": "0.6.1",
+    "@devpodio/monaco": "0.6.1"
   },
   "devDependencies": {
     "lerna": "2.4.0",
     "rimraf": "latest",
-    "typescript": "latest"
+    "typescript": "~3.2.4"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "prepare": "yarn run clean && yarn run build",
-    "postinstall": "composer install",
     "clean": "rimraf lib",
     "build": "tsc",
     "watch": "tsc -w"

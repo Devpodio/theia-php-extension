@@ -1,24 +1,24 @@
 {
   "private": true,
   "name": "electron-app",
-  "version": "0.5.0",
+  "version": "0.6.1",
   "dependencies": {
-    "@devpodio/core": "latest",
-    "@devpodio/editor": "latest",
-    "@devpodio/filesystem": "latest",
-    "@devpodio/languages": "latest",
-    "@devpodio/markers": "latest",
-    "@devpodio/monaco": "latest",
-    "@devpodio/navigator": "latest",
-    "@devpodio/php": "0.5.0",
-    "@devpodio/preferences": "latest",
-    "@devpodio/process": "latest",
-    "@devpodio/terminal": "latest",
-    "@devpodio/typescript": "latest",
-    "@devpodio/workspace": "latest"
+    "@devpodio/core": "0.6.1",
+    "@devpodio/editor": "0.6.1",
+    "@devpodio/filesystem": "0.6.1",
+    "@devpodio/languages": "0.6.1",
+    "@devpodio/markers": "0.6.1",
+    "@devpodio/monaco": "0.6.1",
+    "@devpodio/navigator": "0.6.1",
+    "@devpodio/php": "0.5.3",
+    "@devpodio/preferences": "0.6.1",
+    "@devpodio/process": "0.6.1",
+    "@devpodio/terminal": "0.6.1",
+    "@devpodio/typescript": "0.6.1",
+    "@devpodio/workspace": "0.6.1"
   },
   "devDependencies": {
-    "@devpodio/cli": "latest"
+    "@devpodio/cli": "0.6.1"
   },
   "scripts": {
     "prepare": "theia build",
