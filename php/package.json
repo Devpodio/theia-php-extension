@@ -3,7 +3,7 @@
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.6.1",
+  "version": "0.6.3",
   "files": [
     "/data",
     "/lib",
@@ -22,8 +22,8 @@
     "/vendor/webmozart"
   ],
   "dependencies": {
-    "@devpodio/core": "0.6.1",
-    "@devpodio/monaco": "0.6.1"
+    "@devpodio/core": "0.6.3",
+    "@devpodio/monaco": "0.6.3"
   },
   "devDependencies": {
     "lerna": "2.4.0",
